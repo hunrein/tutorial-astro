@@ -4,9 +4,16 @@ import Social from './Social.astro';
 import GitHubIco from '../assets/github-142-svgrepo-com.svg'
 import LinkedinIco from '../assets/linkedin-svgrepo-com.svg'
 ---
+<style>
+  footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer>
-  <Social platform="github" username="hunrein" icon={GitHubIco}/>
+  <Social platform="github" username="hunrein" icon={GitHubIco} alt="github icon"/>
 
-  <Social platform="linkedin" username="hunreinit" icon={LinkedinIco}/>
+  <Social platform="linkedin" username="hunreinit" icon={LinkedinIco} alt="linkedin icon"/>
 </footer>
