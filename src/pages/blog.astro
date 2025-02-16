@@ -9,7 +9,15 @@ const pageTitle = "Mi Blog";
 <BaseLayout pageTitle={pageTitle}>
 	<h1>Mi blog de Astro aprendizaje</h1>
         <p>Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.<p>
-            <ul>
-				{allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
-            </ul>
+         <ul>
+            {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+         </ul>
 </BaseLayout>
+
+<style>
+   ul{
+      text-decoration: none;
+      list-style: none;
+   }
+   h1{ padding:1rem 0 1rem 0;}
+</style>

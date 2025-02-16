@@ -3,3 +3,18 @@ const { url ,title} = Astro.props;
 ---
 
 <li><a href={url}>{title}</a></li>
+
+<style>
+    a{
+        text-decoration: none;
+    }
+    li{
+        margin-bottom: 2rem;
+        border-bottom: 1px solid gray;
+        padding: 1rem 0 1rem 0;
+    }
+    li:first-child{
+        margin-top: 2rem;
+    }
+
+</style>
